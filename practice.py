@@ -12,16 +12,17 @@
 # else:
 #     print("enter only numbers.")
 
-# 2. 
-# num = input("Enter number: ")
-# if num.isdigit():
-#     num=int(num)
+2. 
+# try :
+#     num = int(input("Enter number: "))
+#     # if num.isdigit():
+#     #     num=int(num)
 #     if num % 2 == 0:
-#         print("Even")
+#       print("Even")
 #     else:
-#         print("Odd")
-# else:
-#     print("enter only numbers.")
+#       print("Odd")
+# except:
+#  print("enter only numbers.")
 
 
 # 3. 
@@ -267,16 +268,17 @@
 
 
 # 7.
-# n = int(input("enter num: "))
-# a = 0
-# b = 1
-# i = 1
-# while i <= n:
-#     print(a)
-#     c = a + b
-#     a = b
-#     b = c
-#     i += 1
+n = int(input("enter num: "))
+a = 0
+b = 1
+i = 1
+while i <= n:
+    print(a)
+    c = a + b
+    a = b
+    b = c
+    i += 1
+    break
 
 
 # 8.
