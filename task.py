@@ -1,59 +1,79 @@
-students = []
+# for  i in range(3):
+#     num = input("login pin:-")
+#     if num.isdigit():
+#         num=int(num)
+#         if num== 1512 :
+#             print("unlock bank account.")
+#             break
+#         else: 
+#             print("try again.")
+# else:
+#      print("try only numbers.")
+     
 
-for i in range(2):
-    print("\nStudent", i + 1)
-
-    name = input("Enter student name: ")
-
-    marks = list(map(int, input("Enter 3 marks: ").split()))
-
-    total = sum(marks)
-    percentage = total / 3
-
-    if percentage >= 90:
-        grade = "A"
-    elif percentage >= 75:
-        grade = "B"
-    elif percentage >= 60:
-        grade = "C"
-    elif percentage >= 40:
-        grade = "D"
-    else:
-        grade = "Fail"
-
-    students.append({
-        "name": name,
-        "marks": marks,
-        "total": total,
-        "percentage": percentage,
-        "grade": grade
-    })
-
-# Table print
-print("\n")
-print("-" * 60)
-print(f"{'Name':<15}{'Total':<10}{'Percentage':<15}{'Grade':<10}")
-print("-" * 60)
-
-for s in students:
-    print(f"{s['name']:<15}{s['total']:<10}{s['percentage']:<15.2f}{s['grade']:<10}")
-
-# Highest marks student
-highest = students[0]
-lowest = students[0]
-
-for s in students:
-    if s["total"] > highest["total"]:
-        highest = s
-
-    if s["total"] < lowest["total"]:
-        lowest = s
-
-print("\nHighest Marks Student:")
-print(highest["name"], "-", highest["total"])
-
-print("\nLowest Marks Student:")
-print(lowest["name"], "-", lowest["total"])
-
+# def change_pin():
+#     num = 1512
+#     user = int(input("enter your currect pin."))
+#     if user == num :
+#         num= int(input("enter new pin:-"))
+#         print("pin change success.")
+#     else:
+#         print("wrong pin.")
+        
  
+# SBI = 100000
+
+# def cash_diposit():
+#      global SBI
+#      money= input("enter amount:-") 
+#      if money.isdigit():
+        
+#         money=int(money)
+#         SBI = SBI+ money
+#         print("money added ")
+#         print(SBI)
+#      else: 
+#          print("invalide input.")
  
+
+# def cash_withdrawal():
+#      global SBI
+#      money= input("enter withdrawal amount:-")
+   
+#      if money.isdigit():
+#         money=int(money)
+#         SBI = SBI- money
+#      if money < SBI:
+#          print("withdrawal sucessfully.")
+#      else :
+#           print("cheak bank balance..",SBI)
+
+
+# def cheak_balance():
+#  global SBI
+#  print(SBI)
+ 
+# while True:
+#     print("==== bank account Management System ====")
+#     print("1. cash diposit.")
+#     print("2. cash withdrawal.")
+#     print("3. cheak balance.")
+#     print("4. change pin.")
+#     print("5. Exit")
+
+#     choice = input("Enter your choice: ")
+
+#     if choice == "1":
+#         cash_diposit()
+#     elif choice == "2":
+#         cash_withdrawal()
+#     elif choice == "3":
+#         cheak_balance()
+#     elif choice == "4" :
+#           change_pin()  
+#     elif choice == "5":
+        
+#         break
+#     else:
+#       print("Invalid choice. Please try again.")
+
