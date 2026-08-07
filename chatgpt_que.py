@@ -1,119 +1,311 @@
-## 1 Student se input lo.Student ki age input lo.Dono values ko dictionary me store karo.Dictionary ko list me add karo.Last me students list print karo.
+# # maltipul inheritance
 
-# student = input("enter your name:-")
-# age = input("enter your age:-")
-# d = {"name":student,"age":age}
-# l= [d]  
-# print(l)
+# class  student :
+#     def __init__(self,name,id):
+#         self.name = name
+#         self.id = id
+    
+# class teacher :
+#     def __init__(self,name1,aiml):
+#         self.name1 = name1
+#         self.aiml = aiml
 
-# # 2 Program banao:  User se student ka name input lo.Agar student mil jaye:Uski age update karo.Agar student na mile  Print karo "Student Not Found"
+# class branch(student,teacher) :
+#     def __init__(self,name,id,name1,aiml,city):
+#         student.__init__(self,name,id)
+#         teacher.__init__(self,name1,aiml)
+#         self.city = city
 
-# d= { "virendra": 22,
-#      "rahul" :20}
-# name = input("find student :-")
-# if name in d.keys():
-#     age= int(input("upadte age:-"))
-#     d[name]=age
-#     print(d)
+#     def show(self):
+#         print(f"student name is {self.name}")
+#         print(f"student id is {self.id}")
+#         print(f"teacher name is {self.name1}")
+#         print(f"teacher courses is {self.aiml}")
+#         print(f"branch city  name is {self.city}")
+
+
+# v = branch("viru",1521,"sandeepgwali","sdfdsf","jamnager")
+# v.show()
+
+# # maltileavel inheritance
+
+# class  student :
+#     def __init__(self,name,id):
+#         self.name = name
+#         self.id = id
+    
+# class teacher(student) :
+#     def __init__(self,name,id,name1,aiml):
+#      student.__init__(self,name,id)
+#      self.name1 = name1
+#      self.aiml = aiml
+
+# class branch(teacher) :
+#     def __init__(self,name,id,name1,aiml,city):
+#         teacher.__init__(self,name,id,name1,aiml)
+#         self.city = city
+
+#     def show(self):
+#         print(f"student name is {self.name}")
+#         print(f"student id is {self.id}")
+#         print(f"teacher name is {self.name1}")
+#         print(f"teacher courses is {self.aiml}")
+#         print(f"branch city  name is {self.city}")
+
+
+# v = branch("viru",1521,"sandeepgwali","sdfdsf","jamnager")
+# v.show()
+
+
+# # single inheritance
+
+
+# class  student :
+#     def __init__(self,name,id):
+#         self.name = name
+#         self.id = id
+#     def show(self):
+#         print(f"student name is {self.name}")
+#         print(f"student id is {self.id}")
+# obj = student("virendra",124431)
+# obj.show()
+
+
+
+
+# marks = input("enter your marks")
+
+# if marks.isdigit():
+#     marks= int(marks)
+#     if marks >= 90 :
+#         print("A")
+#     elif marks >= 50 :
+#         print("B")
+#     elif marks >=35 :
+#         print("c")
+#     else:
+#         print("fail")
 # else:
-#     print("student not found.")
+#     print("try only num.")
 
-# # 3 Requirements:User se student id input lo. Agar id mil jaye  Student ka naam aur marks print karo.   Agar id nahi mile:  "Student Not Found" print karo.
+# num = input("enter any num:-")
+# if num.isdigit():
+#     num = int(num)
+#     if num %2== 0 :
+#         print("even")
+#     else:
+#         print("odd")
+# else:
+#     print("try only num..")
 
-  
-# students = [
-#     {"id": 1, "name": "Virendra", "marks": 85},
-#     {"id": 2, "name": "Rahul", "marks": 70},
-#     {"id": 3, "name": "Amit", "marks": 90}
-# ]
+# l = [12,1231,3424,4523]
+# largesrt = l[0]
+# for i in l :
+#     if i > largesrt :
+#         largesrt = i 
+# print(largesrt)
 
-# user_id = int(input("Enter student id: "))
-# for student in students:
-#     if student["id"] == user_id:
-#         print(student["name"])
-#         print(student["marks"])
+# num1 = 555
+# num2 = 123456456
+# num3 = 453
+# if num1 >num2 and num1>num3 :
+#     print("num1 is grater")
+# elif num2>num3 and num2>num1 :
+#     print("num 2 is grater")
+# else:
+#     print("num3 is grater")
+
+
+# age = input("enter your age :-")
+# if age.isdigit():
+#     age = int(age)
+#     if age >= 18 :
+#         print("you are eligible")
+#     else:
+#         print("not eligible.")
+# else:
+#     print("try only num.")
+
+# years = input("cheak leap year:-")
+
+# if years.isdigit():
+#     years= int(years)
+#     if years %4 == 0 :
+#         print("this year is leap.")
+#     else:
+#         print("not leap years.")
+# else:
+#     print("try only num.
+
+# name = input("enter your name:-")
+# if name in "aeiou":      
+#         print("vowel")
+# else:
+#         print("consonenet.")
  
-# else:
-#     print("Student Not Found")
+# for i in range(1,101):
+#     print(i)
 
+# for i in range(2,101,2):
+#     print(i)
 
-# # 4 Write a program to: Take an integer input n .Print all even numbers from 1 to n.Do not use % (modulus operator).
+# for i in range(1,101,2):
+#     print(i)
+
+# num = int(input("enter multiphication num:-"))
+# for i in range(1,11):
+#     print(num ,"x",i,"=",num*i)
+
+# sum=0
+# for i in range(1,101):
+#     sum = sum+i
+#     print(sum)
+
+# num= int(input("enter any num:-"))
+# fact = 1 
+# for i in range(1,num+1):
+#     fact = fact*i
+#     print(fact)
+
+# for i in range(1,21):
+#     print(i*i)
+
+# for i in range(101,1,-1):
+#     print(i)
+
+# i=0
+# while i <=100:
+#     i+=2
+#     print(i)
+
 
 # i = 1
-# num = int(input("enter any num:-"))
-# while i <=  num:
-#     print(i)
-#     i += 2
+# sum = 0
+# while i<101 :
+#     sum = sum+i
+#     print(sum)
+#     i += 1
 
-# # 5 Write a program to: Take an integer input n.Print numbers from 1 to n.If the number is divisible by 3, print "Fizz" instead of the number.If the number is divisible by 5, print "Buzz" instead of the number.If the number is divisible by both 3 and 5, print "FizzBuzz".
+# i = 100
+# sum = 0
+# while i>1 :
+# i += 1
+#   print(i)
 
-# num = int(input("enter and num:-"))
-# for i in range(1,num+1):
-#     if i %3 == 0 and i %5 == 0:
-#         print(i,"Fizz Buzz") 
-#     elif i %3 == 0 :
-#         print(i,"fizz")
-#     elif i %5 == 0 :
-#         print(i,"Buzz")
-#     else:
-#         print(i)
-
-
-# # 6 Write a program to: Take a string input.Count  how many vowels are in the string.  Do not use .count().
-
-# name = input("enter your name:-").lower()
-# for ch in name :
-#     if ch in "a" "e" "i" "o" "u" :
-#        print(ch)
-
-# # 7 Rules ❌ Don't use set()❌ Don't use libraries ✅ Use loops and conditions
-# numbers = [4, 7, 2, 9, 5, 2, 7, 4]
-# uniqe = []
-# for i in numbers :
-#     if i not in uniqe :
-#         uniqe.append(i)  
-# for  i in uniqe:
-#     print(i)
-
-# # 8  Rules Find the second largest number ❌ Don't use sort()❌ Don't use max()❌ Don't use min()✅ Use loops and conditions only.
  
-# l = [10, 20, 30, 40, 50]
+ 
+
+# while  True: 
+#     num = int(input("enter any num:-"))
+#     if num == 0 :
+#         print(num)
+#         break
+
+# l = [1,2,3,4,5]
+# print(l)   
+
+
+# l = [1,2,38,8,58,37,7,37,37,2,23,145,54,456,547,7435435429,467,4697,5]
+# l.remove(5)
+# a = l[3]
 # largest = l[0]
-# second = l[0]
 # for i in l:
 #     if i > largest:
-#         second = largest
-#         largest = i
-#     elif i > second  :
-#         second = i
-# print("Largest:", largest)
-# print("Second Largest:", second)
-
-
-# # smlallest num 
-# l = [25, 10, 45, 5, 30]
+#         largest=i
+# print(largest)
 # smallest = l[0]
 # for i in l :
 #     if i < smallest:
 #         smallest = i
-# print(smallest)
+# print(smallest) 
 
-# # 9  Write a program to count even and odd numbers in the list.  ❌ Don't use count() ❌ Don't create separate even/odd lists.✅ Use only loops and conditions.
-
-# l = [10, 15, 22, 31, 40, 55]
-# even  = 0
-# odd= 0
+# l.sort()
+# print(l)
+# l.reverse()
+# sum = 0
 # for i in l :
-#     if i %2 == 0  :
-#         even += 1  
-#     elif i%2 != 0 :
-#         odd+= 1
-# print("even=",even)
-# print("odd=",odd)
+#     sum = sum+i
+# print(sum)
 
-#  10 Write a Python program to reverse a list without using reverse() or slicing ([::-1]). ❌ Don't use reverse() ❌ Don't use [::-1]❌ Don't use reversed()
-
-# l = [10, 20, 30, 40, 50]
-# for i in range(len(l)-1,-1,-1):
-#     print(l[i])
+# d= {"name":"virendra",
+#     "age":22,
+#     "city":"jamnager"}
+# print(d.keys())
+# name = input("entr name:-")
+# age = int(input("enter age:-"))
+# d[name]=age
+# d.pop(name)
+# print(d)
  
+# import matplotlib.pyplot as mtp
+# import numpy as np
+
+# tem = np.array([32,35,29,23,34,22])
+# day = np.array(["sun","mon","tue","the","fri","sut"])
+
+# mtp.plot(day,tem,marker='o',label="week days",color="r")
+# mtp.title("week tempacher in jamnager")
+# mtp.xlabel("days")
+# mtp.ylabel("temprecher")
+# mtp.legend()
+# mtp.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import math 
+# print(math.fibbo(5))
+          
+
+
+# import matplotlib.pyplot as mpl 
+# import numpy as np

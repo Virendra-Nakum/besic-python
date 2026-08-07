@@ -8,7 +8,7 @@ d= {
 def add_employee():
     employee= input("enter employee name:-")
     ID= input("employee ID:-")
-    if employee.isalpha() and ID.isalpha() :
+    if employee.isalpha() and ID.isdigit() :
         d[employee]=ID
     else: 
         print("try only alphabet.")
