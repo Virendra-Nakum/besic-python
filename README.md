@@ -1,63 +1,61 @@
-Student_Result_Analysis.py
-Student Result Analysis
+# 📊 Student Result Analysis
+
 Created by: Virendra Nakum
-© 2026 Virendra Nakum
+2026 Virendra Nakum
 Educational / Portfolio Project
-Student Result Analysis
 
- 📌 About Project
+📌 About Project
+Student Result Analysis** is a beginner-level Python project designed to manage student details and marks and perform basic result analysis.
+The project demonstrates the use of Python, NumPy, and Matplotlib for student data management, result calculation, and performance visualization.
 
-Student Result Analysis is a beginner-level Python project.
+✨ Features
 
-This project is used to store student details and marks and perform
-basic result analysis.
+* Add Student
+* View Student
+* Search Student
+* Update Student
+* Delete Student
+* Calculate Total Marks
+* Calculate Percentage
+* Show Student Result
+* Student ID Validation
+* NumPy Analysis
+* Student Performance Graph
 
-  ✨ Features
+🛠️ Technologies Used
 
-- Add Student
-- View Student
-- Search Student
-- Update Student
-- Delete Student
-- Calculate Total Marks
-- Calculate Percentage
-- Show Student Result
-- NumPy Analysis
-- Student Performance Graph
-- Student ID Validation
-- 
-  🛠️ Technologies Used
+* Python
+* NumPy
+* Matplotlib
 
-- Python
-- NumPy
-- Matplotlib
-
-  📊 Subjects
+📚 Subjects
 
 The project currently uses four subjects:
 
-- Math
-- Physics
-- Chemistry
-- Science
+* Math
+* Physics
+* Chemistry
+* Science
 
-  ▶️ How to Run
+▶️ How to Run
 
-1. Install Python.
-2. Install required libraries:
- 
+1. Install Python
+
+Make sure Python is installed on your computer.
+
+2. Install Required Libraries
 pip install numpy matplotlib
+
+3. Run the Project
+ 
 python Student_Result_Analysis.py
 
 👨‍💻 Author
+
 Virendra Nakum
+
 GitHub: Virendra-Nakum
 © Copyright
-
 © 2026 Virendra Nakum
-
-This project is created by Virendra Nakum.
-
-The source code is provided for viewing and educational purposes.
-Unauthorized copying, redistribution, or claiming this project as your own
-is not permitted.
+This project is created by Virendra Nakum for educational and portfolio purposes.
+The source code is provided for viewing and educational purposes. Unauthorized copying, redistribution, or claiming this project as your own is not permitted.
