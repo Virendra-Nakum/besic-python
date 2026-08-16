@@ -465,7 +465,8 @@ while True:
 
 
     elif choice == "8":
-        print("Thank You.... Very Much For Using  Mr.Virendra's  Code.")
+        print("Thank You For Using Student Result Analsis System.")
+        print("Developed By Mr. Virendra.")
         break
 
     else:
