@@ -1,22 +1,14 @@
 (1)
-num=50
+import randome
 
-for i in range(3):
-    try:
-     guess = int(input("guess the number between 1 to 100:-"))
-     if num == guess:
-        print("congralation")
-     elif num > guess:
-        print("too low")
-     else:
-        print("too high")
-        
-    except:
-      print("try any num")
+number = random.randint(1,10)
+# print(number)
+guess = int(input("Enter Your guess Number :-))
+if guess == number :
+        print("Congralation")
 else:
-    print("plese try again")
-
-
+    print("Try Again")
+    
 (2)
 
 game = 50
