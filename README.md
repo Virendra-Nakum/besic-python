@@ -1,61 +1,212 @@
-# 📊 Student Result Analysis
+# Student Performance Management System
 
-Created by: Virendra Nakum
-2026 Virendra Nakum
-Educational / Portfolio Project
+A Python-based console application for managing student records, marks, attendance, grades, and class performance.
 
-📌 About Project
-Student Result Analysis** is a beginner-level Python project designed to manage student details and marks and perform basic result analysis.
-The project demonstrates the use of Python, NumPy, and Matplotlib for student data management, result calculation, and performance visualization.
+## Features
 
-✨ Features
+- Login and account management
+- Create account
+- Change password
+- Add student records
+- View student records
+- Search student by ID
+- Update student information
+- Remove student records
+- Marks analysis
+- Percentage calculation
+- Grade and Pass/Fail analysis
+- Attendance analysis
+- Short attendance detection
+- Class statistics
+- Top performers
+- Save student data using JSON
+- Load saved data automatically
+- Input validation and exception handling
 
-* Add Student
-* View Student
-* Search Student
-* Update Student
-* Delete Student
-* Calculate Total Marks
-* Calculate Percentage
-* Show Student Result
-* Student ID Validation
-* NumPy Analysis
-* Student Performance Graph
+## Technologies Used
 
-🛠️ Technologies Used
+- Python
+- Object-Oriented Programming (OOP)
+- JSON
+- Lambda Functions
+- Filter Function
+- List and Dictionary
+- Exception Handling
+- File Handling
 
-* Python
-* NumPy
-* Matplotlib
+## OOP Concepts Used
 
-📚 Subjects
+### Class
 
-The project currently uses four subjects:
+The project uses multiple classes:
 
-* Math
-* Physics
-* Chemistry
-* Science
+- `Student`
+- `StudentManager`
+- `StudentAnalytics`
 
-▶️ How to Run
+### Encapsulation
 
-1. Install Python
+Student data and related methods are grouped inside classes.
 
-Make sure Python is installed on your computer.
+### Inheritance
 
-2. Install Required Libraries
-pip install numpy matplotlib
+`StudentAnalytics` inherits from `StudentManager`.
 
-3. Run the Project
- 
-python Student_Result_Analysis.py
+```python
+class StudentAnalytics(StudentManager):
+Polymorphism / Method Overriding
 
-👨‍💻 Author
+StudentAnalytics overrides the search_student() method.
+
+Static Method
+
+valid_marks() is implemented using @staticmethod.
+
+Class Method
+
+from_dict() is implemented using @classmethod.
+
+Property
+
+The percentage value is calculated using @property.
+
+Project Structure
+Student-Performance-Management-System/
+│
+├── main.py
+├── File.json
+└── README.md
+How to Run
+Step 1: Open the project in VS Code
+
+Open the project folder in Visual Studio Code.
+
+Step 2: Open Terminal
+
+In VS Code:
+
+Terminal → New Terminal
+Step 3: Run the program
+python main.py
+Main Menu
+1. Login
+2. Add Student
+3. View Student
+4. Search Student
+5. Update Student
+6. Marks Analysis
+7. Grade / Pass-Fail
+8. Attendance
+9. Class Statistics
+10. Top Performers
+11. Save
+12. Exit
+Student Information
+
+The system stores:
+
+Student ID
+Student Name
+Student Age
+Course
+Subjects
+Marks
+Attendance
+Percentage
+Marks Analysis
+
+The system calculates:
+
+Total Marks
+Percentage
+Average Marks
+Highest Marks
+Lowest Marks
+Failed Subject Marks
+Grade System
+Percentage	Grade
+90+	A+
+80–89	A
+70–79	B+
+60–69	B
+50–59	C
+40–49	D
+Below 40	E
+
+A student fails if any subject has marks below 33.
+
+Attendance
+
+Students having attendance below 70% are displayed as having short attendance.
+
+JSON Data Storage
+
+Student records are saved in:
+
+File.json
+
+The program uses Python's json module to save and load student data.
+
+Error Handling
+
+The application handles invalid user input using try-except.
+
+For example:
+
+try:
+    student_id = int(input("Enter Student ID:- "))
+except ValueError:
+    print("Enter a valid Student ID.")
+
+This prevents the program from crashing because of invalid input.
+
+Learning Concepts
+
+This project helped practice:
+
+Python Functions
+Classes and Objects
+Constructors
+self
+Inheritance
+Method Overriding
+Encapsulation
+Static Methods
+Class Methods
+Properties
+Lambda Functions
+filter()
+Lists
+Loops
+Exception Handling
+File Handling
+JSON
+CRUD Operations
+Future Improvements
+
+Possible future improvements:
+
+Database integration
+GUI application
+Web application
+User authentication with secure password storage
+Export reports to Excel/PDF
+Student performance charts
+Admin dashboard
+Author
 
 Virendra Nakum
 
-GitHub: Virendra-Nakum
-© Copyright
-© 2026 Virendra Nakum
-This project is created by Virendra Nakum for educational and portfolio purposes.
-The source code is provided for viewing and educational purposes. Unauthorized copying, redistribution, or claiming this project as your own is not permitted.
+Python Developer | Data Science & AI/ML Learner
+
+Jamnagar, Gujarat, India
+
+ 
+```
+Student Performance Management System
+│
+├── main.py
+├── File.json
+└── README.md
+
+```
